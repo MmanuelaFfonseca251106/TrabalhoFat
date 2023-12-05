@@ -1,0 +1,36 @@
+<h1>Seja bem vindo ao curso de Angular!</h1>
+<h4 class="text-danger">{{ anuncio }}</h4>
+
+<div class="row">
+  <div class="col">
+<app-card-produto
+[foto]="foto"
+[nomeProduto]="nomeProduto"
+[promocao]="promocao"
+[idProduto]="idProduto"
+[dataValidade]="dataValidade"
+[precoProduto]="precoProduto">
+</app-card-produto>
+</div>
+<div class="col">
+<app-card-produto
+  foto="https://sweetway.com.br/wp-content/uploads/2019/05/7-motivos-viagem-havai-inesquecivel.jpg"
+  nomeProduto="Viagem para o Havaí"
+  [promocao] = "false"
+  [idProduto] =  12
+  dataValidade ="2020-12-30"
+  [precoProduto] =5000
+></app-card-produto>
+</div>
+<div class="col">
+  <app-card-produto
+    foto="https://www.maladeaventuras.com/wp-content/uploads/2022/01/palmeira-artificial-dubai-1.jpg"
+    nomeProduto="Viagem para Dubai"
+    [promocao] = "false"
+    [idProduto] =  1
+    dataValidade ="2020-12-20"
+    [precoProduto] =1000
+  ></app-card-produto>
+  </div>
+
+</div>
